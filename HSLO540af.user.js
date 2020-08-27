@@ -5,7 +5,7 @@
 // @author       2coolife, YueAgar_c, Mike
 // @match        http://agar.io/*
 // @match        https://agar.io/*
-// @updateURL    https://imissyuesomuch.glitch.me/HSLO540af.user.js
+// @updateURL    https://octoagar.cf/HSLO540af.user.js
 // @run-at       document-start
 // @grant        GM_xmlhttpRequest
 // @connect      yueagar.ml
@@ -18,7 +18,7 @@ if (location.host === "agar.io" && location.href !== "https://agar.io/hslo") {
 
 GM_xmlhttpRequest({
     method: 'GET',
-    url: 'https://imissyuesomuch.glitch.me/HSLO540af.html?' + Math.random(),
+    url: 'https://octoagar.cf/HSLO540af.html?v=' + Math.random(),
     onload: function(data) {
         document.open();
         document.write(data.responseText);
